@@ -492,7 +492,8 @@ else
         ${EXT_DIR}/utilities/sendMessage.sh -l bad -m "Failed with container size ${CONTAINER_SIZE}. $(get_error_info)"
         exit 1;
     else
-        export MEMORY="--memory $RET_MEMORY"
+        #export MEMORY="--memory $RET_MEMORY"
+        export MEMORY="--memory 128"
     fi
 fi
 
